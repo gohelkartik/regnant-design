@@ -1,0 +1,132 @@
+#srv-hero {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a3cce;
+}
+
+.hero-title {
+    text-align: center;
+}
+
+.hero-title h1 {
+    font-family: a;
+    font-size: 10vw;
+    color: #fff;
+    line-height: 0.9;
+    font-weight: 100;
+}
+
+#srv-list {
+    padding: 10vw 5vw;
+    background-color: #0a3cce;
+}
+
+.srv-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    min-height: 60vh;
+}
+
+.srv-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.srv-col-text {
+    width: 40%;
+    color: #fff;
+    font-family: a;
+}
+
+.srv-col-text span {
+    font-size: 1.2vw;
+    opacity: 0.6;
+}
+
+.srv-col-text h2 {
+    font-size: 4vw;
+    font-weight: 100;
+    margin: 1.5vw 0;
+}
+
+.srv-col-text p {
+    font-size: 1.3vw;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.srv-col-img {
+    width: 50%;
+    height: 35vw;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.srv-col-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.srv-row:hover .srv-col-img img {
+    transform: scale(1.05);
+}
+
+#srv-cta {
+    height: 60vh;
+    background-color: #0a3cce;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-box {
+    text-align: center;
+    color: #fff;
+    font-family: a;
+}
+
+.cta-box h1 {
+    font-size: 5vw;
+    font-weight: 100;
+    margin-bottom: 3vw;
+}
+
+.cta-box button {
+    text-decoration: none;
+    padding: 1.5vw 4vw;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #9a9696;
+    font-family: a;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cta-box button:hover {
+    background: #111;
+    color: #0a3cce;
+}
+
+@media (max-width: 768px) {
+    .srv-row, .srv-row:nth-child(even) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .srv-col-text, .srv-col-img {
+        width: 100%;
+    }
+    .srv-col-img {
+        margin-top: 5vw;
+        height: 60vw;
+    }
+    .srv-col-text h2 { font-size: 8vw; }
+    .srv-col-text p { font-size: 4vw; }
+}
