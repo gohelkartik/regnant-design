@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGNANT DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <img src="Screenshot 2023-05-30 220719.png" alt="Regnent Design Logo">
+            <div id="right-nav">
+                <a href="index.html" >home</a>
+                <a href="service.html">Services</a>
+                <a href="studio.html" style="opacity: 0.5;">Studio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <i class="ri-menu-3-line" id="menu-toggle"></i>
+        </nav>
+
+        <div id="mobile-menu">
+            <i class="ri-close-line" id="close-toggle"></i>
+            <div id="mobile-links">
+                <a href="index.html">Home</a>
+                <a href="service.html">Services</a>
+                <a href="studio.html">Studio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <section id="studio-hero" data-scroll-section>
+            <div class="hero-content">
+                <h1 data-scroll data-scroll-speed="2">CRAFTING THE <br><span>UNBUILT WORLD</span></h1>
+            </div>
+        </section>
+
+        <section id="studio-info" data-scroll-section>
+            <div class="info-split">
+                <div class="info-left" data-scroll data-scroll-speed="1">
+                    <h3>OUR PHILOSOPHY</h3>
+                    <h1>Precision is the bridge between a dream and a structure.</h1>
+                </div>
+                <div class="info-right">
+                    <p>Founded in the pursuit of architectural excellence, Regnant Studio operates at the intersection of technology and art. We don't just render; we simulate reality. Our team of architects and digital artists ensure every photon and fiber is accounted for.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats-section" data-scroll-section>
+            <div class="stat-box">
+                <h1 class="counter">150+</h1>
+                <span>Projects Delivered</span>
+            </div>
+            <div class="stat-box">
+                <h1 class="counter">12+</h1>
+                <span>Global Awards</span>
+            </div>
+            <div class="stat-box">
+                <h1 class="counter">150+</h1>
+                <span>happy clients</span>
+            </div>
+        </section>
+
+        <section id="studio-visual" data-scroll-section>
+            <div class="image-reveal-wrapper">
+                <img src="project3.png" alt="Studio Work">
+            </div>
+        </section>
+
+        <footer data-scroll-section>
+            <h1>READY TO BUILD?</h1>
+            <button><a href="contact.html" style="text-decoration: none; color: #fff;">START A PROJECT</a></button>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
